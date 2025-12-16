@@ -11,15 +11,9 @@ namespace cassidoo_2025_12_15
 		public static int[][] GenerateLatinSquare(int n)
 		{
 			int[][] result = new int[n][];
-			/* int[] firstRow = new int[n];
 			for(int i = 0; i < n; ++i)
 			{
-				firstRow[i] = i + 1;
-			}
-			result[0] = firstRow;*/
-			for(int i = 0; i < n; ++i)
-			{
-				// generate any row
+				// generate every row
 				int[] row = new int[n];
 				for(int j = 0; j < n; ++j)
 				{
@@ -52,14 +46,3 @@ namespace cassidoo_2025_12_15
 		}
 	}
 }
-
-/**
- *  [1, 2, 3]
- *  [2, 3, 1]
- *  [3, 1, 2]
- *  
- *  [1, 2, 3, 4]
- *  [2, 3, 4, 1]
- *  [3, 4, 1, 2]
- *  [4, 1, 2, 3]
- */
