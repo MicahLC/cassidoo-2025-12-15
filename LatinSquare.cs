@@ -8,14 +8,30 @@ namespace cassidoo_2025_12_15
 {
 	internal class LatinSquare
 	{
-		public static bool ValidLatinSquare(int[][] ls)
-		{
-			return false;
-		}
-
 		public static int[][] GenerateLatinSquare(int n)
 		{
-			return [[]];
+			int[][] result = new int[n][];
+			/* int[] firstRow = new int[n];
+			for(int i = 0; i < n; ++i)
+			{
+				firstRow[i] = i + 1;
+			}
+			result[0] = firstRow;*/
+			for(int i = 0; i < n; ++i)
+			{
+				// generate any row
+				int[] row = new int[n];
+				for(int j = 0; j < n; ++j)
+				{
+					row[j] = i + j + 1;
+					if (row[j] > n)
+					{
+						row[j] -= n;
+					}
+				}
+				result[i] = row;
+			}
+			return result;
 		}
 	}
 }
