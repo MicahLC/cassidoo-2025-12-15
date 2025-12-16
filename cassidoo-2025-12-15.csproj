@@ -6,6 +6,7 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>cassidoo_2025_12_15.LatinSquare</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

@@ -33,6 +33,23 @@ namespace cassidoo_2025_12_15
 			}
 			return result;
 		}
+		public static void Main(string[] args)
+		{
+			int[][] latinSquare = GenerateLatinSquare(195);
+			for (int i = 0; i < latinSquare.Length; ++i)
+			{
+				Console.Write("[");
+				for (int j = 0; j < latinSquare[i].Length; ++j)
+				{
+					Console.Write(latinSquare[i][j]);
+					if (j != latinSquare[i].Length - 1)
+					{
+						Console.Write(", ");
+					}
+				}
+				Console.WriteLine("]");
+			}
+		}
 	}
 }
 

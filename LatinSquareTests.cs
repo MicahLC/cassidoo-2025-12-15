@@ -24,5 +24,5 @@ namespace cassidoo_2025_12_15
 			latinSquare[2].Should().Equal([3, 1, 2]);
 			// latinSquare[0].Should().Equal([[1, 2, 3], [2, 3, 1], [3, 1, 2]]);
 		}
-    }
+	}
 }
